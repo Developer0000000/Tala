@@ -1,0 +1,314 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'attila';
+    src: url('./font/attila.ttf');
+}
+
+@font-face {
+    font-family: 'havelock';
+    src: url('./font/havelock.otf');
+}
+
+@font-face {
+    font-family: 'DancingScript';
+    src: url('./font/DancingScript-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./font/Montserrat-Medium.ttf');
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #232025;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #D1D1D1 !important;
+    border-radius: 10px;
+}
+
+.h1_slides::-webkit-scrollbar,
+.scroll_none::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+    background-color: #D1D1D1;
+    color: #232025;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    color: #D1D1D1;
+    font-family: 'attila', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: #232025;
+    scroll-behavior: smooth;
+}
+
+
+/* nav  */
+
+nav {
+    /* background-color: aqua; */
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+.transition_menu {
+    transition: all 1s ease;
+}
+
+.text_color {
+    color: #232025;
+}
+
+.full_scr_nav_menu__top {
+    top: 0 !important;
+}
+
+
+/* page 2 */
+
+.page2 .pag2_heading h1 {
+    transform-origin: bottom;
+}
+
+
+/* page 3 */
+
+.page3 .fruits {
+    transition: all ease 1s;
+}
+
+.page3 .fruits i,
+.page3 .fruits h1 {
+    transition: all ease 1s;
+}
+
+.page3 .fruits:hover i {
+    opacity: 1;
+}
+
+.page3 .fruits:hover h1 {
+    -webkit-text-stroke: 1px #adadad;
+    color: #232025;
+}
+
+.fruits_card {
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 3s;
+}
+
+
+/* page 6 */
+.page6>div h1 {
+    padding: 0 !important;
+}
+
+.page6>div h1 span {
+    padding: 0 !important;
+}
+
+
+
+
+/* utils  */
+
+.dancing_font {
+    font-family: dancingScript, sans-serif;
+}
+
+.montserrat {
+    font-family: 'Montserrat';
+}
+
+.havelock {
+    font-family: 'havelock', sans-serif;
+}
+
+.text_primary {
+    color: #232025;
+}
+
+.bg_primary {
+    background: #232025;
+}
+
+.text_secondary {
+    color: #D1D1D1;
+}
+
+.bg_secondary {
+    background: #D1D1D1;
+}
+
+.cart_text_nav {
+    display: none;
+}
+
+.stroke_text {
+    -webkit-text-stroke: 1px #adadad;
+    color: transparent;
+}
+
+
+.transition_img {
+    transition: opacity .4s ease-in;
+    transform: rotate(15deg);
+    border-radius: 13px;
+}
+
+
+
+
+
+/*@ animation */
+
+.animation_rotate {
+    animation: rotate 2s infinite linear !important;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/* @ media queries */
+
+@media screen and (max-width: 500px) {
+    .page4 div {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .page4 h1 {
+        text-align: center;
+        padding-left: 0;
+        font-size: 10vw;
+        line-height: 11.2vw;
+    }
+
+    .page4 h2 {
+        width: 100% !important;
+        border-bottom: 1px solid #D1D1D1;
+        border-right: none;
+        padding-left: 0;
+        font-size: 6vw;
+        line-height: 6.6vw;
+    }
+
+    .page4 h3 {
+        padding-left: 0;
+        font-size: 3vw;
+        line-height: 4.5vw;
+        width: 100% !important;
+    }
+
+    .page6 .h1_slides h1 {
+        font-size: 20vw;
+        line-height: 18vw;
+    }
+
+    .page7 .yes_no_box {
+        flex-direction: column;
+        gap: 6rem 0;
+        justify-content: center;
+    }
+
+    .page7 .yes_no_box .elem_yes,
+    .page7 .yes_no_box .elem_no {
+        width: 70vw;
+    }
+
+    .transition_img {
+        width: 60vw !important;
+    }
+
+}
+
+
+@media screen and (max-width: 425px) {
+
+    nav {
+        padding: 1rem auto;
+    }
+
+    .cart_text_nav {
+        display: block;
+    }
+
+    .cart_text {
+        display: none;
+    }
+
+    .page1 h1 {
+        font-size: 20vw;
+    }
+
+    .page3 .fruits_card {
+        width: 180px;
+        height: 230px;
+    }
+
+    .page3 .fruits_card .fruits_card_desc {
+        padding-left: 1.5rem;
+    }
+
+    .page4 h1 {
+        text-align: center;
+        padding-left: 0;
+        font-size: 11vw;
+        line-height: 12.5vw;
+    }
+
+    .page4 h3 {
+        font-size: 4vw;
+        line-height: 5.5vw;
+    }
+
+    .page4 h2 {
+        font-size: 6.5vw;
+        line-height: 7vw;
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .page6 .h1_slides h1 {
+        font-size: 23vw;
+        line-height: 21vw;
+    }
+
+    .fruit_box_left h1{
+        font-size: 2.5rem;
+    }
+
+    .fruit_box_left i{
+        font-size: 2rem;
+    }
+
+}

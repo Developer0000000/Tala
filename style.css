@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'attila';
-    src: url('./font/attila.ttf');
+    src: url('./font/attila.otf');
 }
 
 @font-face {
@@ -14,12 +14,12 @@
 
 @font-face {
     font-family: 'DancingScript';
-    src: url('./font/DancingScript-VariableFont_wght.ttf');
+    src: url('./font/DancingScript-VariableFont_wght.otf');
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('./font/Montserrat-Medium.ttf');
+    src: url('./font/Montserrat-Medium.otf');
 }
 
 ::-webkit-scrollbar {
